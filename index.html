@@ -1,13 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop Demo Site</title>
     <style>
-        /* Using a clean sans-serif stack as backup for Roboto */
-        body { font-family: 'Roboto', sans-serif; text-align: center; padding: 50px; }
-        #signup-btn { background: blue; color: white; padding: 15px 30px; border: none; cursor: pointer; font-size: 16px; border-radius: 5px; }
-        #signup-btn:hover { background: darkblue; }
-        a { text-decoration: none; }
+        /* Modern, clean CSS reset and styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        p {
+            color: #5f6368;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: block;
+            padding: 14px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Primary Button Style */
+        #signup-btn {
+            background-color: #1a73e8;
+            color: white;
+        }
+
+        #signup-btn:hover {
+            background-color: #1557b0;
+            transform: translateY(-1px);
+        }
+
+        /* Secondary Button Style */
+        #community-btn {
+            background-color: #34a853;
+            color: white;
+        }
+
+        #community-btn:hover {
+            background-color: #2d8e47;
+            transform: translateY(-1px);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #9aa0a6;
+        }
     </style>
 
     <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
@@ -26,11 +102,21 @@
     </script>
     </head>
 <body>
-    <h1 id="headline">Boost Your Analytics Skills!</h1>
-    <p>Sign up for our exclusive A/B testing workshop.</p>
-    
-    <a href="https://www.instagram.com/nusproductclub/" target="_blank">
-        <button id="signup-btn">Register Now</button>
-    </a>
+
+    <div class="container">
+        <h1 id="headline">Boost Your Analytics Skills!</h1>
+        <p id="description">Sign up for our exclusive A/B testing workshop and learn to optimize like a pro.</p>
+        
+        <div class="button-group">
+            <a href="https://t.me/nuspc" target="_blank" class="btn" id="signup-btn">
+                Register Now
+            </a>
+
+            <a href="https://t.me/nussds" target="_blank" class="btn" id="community-btn">
+                Join Community
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
